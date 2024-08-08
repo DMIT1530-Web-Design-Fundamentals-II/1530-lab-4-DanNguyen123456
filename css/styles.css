@@ -141,8 +141,30 @@ button {
     }
 }
 
-/* DESKTOP VIEW */
-@media screen and (min-width: 820px) {}
+/* MEDIUM VIEW */
+@media screen and (min-width: 600px) {
+    .content {
+        padding: 1rem;
+    }
+
+    fieldset {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    fieldset div {
+        width: 49%;
+    }
+
+    select {
+        height: 100%;
+    }
+
+    button {
+        margin-top: 3rem;
+    }
+}
 
 /* LARGEST VIEW */
 @media screen and (min-width: 1000px) {}
