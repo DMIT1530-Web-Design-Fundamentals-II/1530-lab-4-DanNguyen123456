@@ -14,7 +14,24 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+.banner {
+    background-image: url('/img/work-at-home-with-pets.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+}
 
+.title {
+    display: flex;
+    font-size: .8rem;
+    color: black;
+}
+
+.title img {
+    max-width: 2rem;
+    margin-right: .4rem;
+}
 
 /* ON YOUR OWN
 
@@ -25,3 +42,18 @@ body {
     3. have a drop-shadow on the text
 
 */
+
+@media screen and (max-width: 820px) {
+    .title {
+        padding: 1rem;
+        position: absolute;
+        top: 0rem;
+        color: white;
+    }
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 820px) {}
+
+/* LARGEST VIEW */
+@media screen and (min-width: 1000px) {}

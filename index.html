@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,76 @@
 
     <!-- Website & Author Information -->
     <meta name="author" content="...">
-    <meta name="description" content="This lab demonstrates a responsive web signup form for a fictitious tech startup.">
+    <meta name="description"
+        content="This lab demonstrates a responsive web signup form for a fictitious tech startup.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
 
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="banner"></div>
+        <div class="title">
+            <img class="svg" src="/img/logo.svg" alt="logo">
+            <h1>remote.ly</h1>
+        </div>
+        <h1>Make every day 'bring your pet to work' day.</h1>
+        <p>Our award-winning platform lets you take your work on the go, wherever life may lead you. Sign up now to
+            securely connect to clients, no matter where you are.
+        </p>
+        <section class="box">
+            <form id="form">
+                <div>
+                    <p>Try it free for 7 days, with plans starting at $25/month.</p>
+                </div>
+                <h3>Your Account</h3>
+                <fieldset>
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email">
+                    <label for="pass">Password</label>
+                    <input type="text" id="pass">
+                    <label for="pass-again">Password (Again!)</label>
+                    <input type="text" id="pass-again">
+                </fieldset>
+                <p>Your password must contain at least one uppercase letter, one lowercase letter, and one number.</p>
+                <h3>All About You</h3>
+                <fieldset>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                    <label for="bus">Business Type</label>
+                    <select id="bus">
+                        <option value="sole">Sole Proprietorship</option>
+                        <option value="part">Partnership</option>
+                        <option value="lim">Limited Liability Company</option>
+                        <option value="corp">Corporation</option>
+                    </select>
+                </fieldset>
+
+                <div class="submit-button">
+                    <button type="submit">Claim Your Free Trial ></button>
+                </div>
+
+                <p>
+                    By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                </p>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
