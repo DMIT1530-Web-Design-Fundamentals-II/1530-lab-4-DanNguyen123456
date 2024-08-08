@@ -80,6 +80,15 @@ input {
     padding: .6rem .3rem .6rem .3rem;
 }
 
+
+
+label:has(+input:valid) {
+    background-image: url('/img/check.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 5%;
+}
+
 select {
     border: 1px solid #D4D4D4;
     background-color: white;
@@ -200,5 +209,17 @@ button {
 
     .head {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        background-image: url('/img/work-at-home.webp');
+        max-width: 80vh;
+        width: 100%;
+    }
+
+    .content {
+        max-width: 100vh;
     }
 }

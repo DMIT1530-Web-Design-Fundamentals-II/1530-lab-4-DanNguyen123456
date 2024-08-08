@@ -45,15 +45,15 @@
                     <fieldset>
                         <div>
                             <label for="username">Username</label>
-                            <input type="text" id="username">
+                            <input type="text" required id="username">
                         </div>
                         <div>
                             <label for="email">Email Address</label>
-                            <input type="text" id="email">
+                            <input type="text" required id="email">
                         </div>
                         <div>
                             <label for="pass">Password</label>
-                            <input type="text" id="pass">
+                            <input type="password" required id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])">
                             <p class="info infopass">
                                 Your password must contain at least one uppercase letter, one lowercase
                                 letter, and one number.
@@ -62,7 +62,7 @@
 
                         <div>
                             <label for="pass-again">Password (Again!)</label>
-                            <input type="text" id="pass-again">
+                            <input type="password" required id="pass-again">
                         </div>
                     </fieldset>
 
@@ -70,11 +70,11 @@
                     <fieldset>
                         <div>
                             <label for="fname">First Name</label>
-                            <input type="text" id="fname">
+                            <input type="text" required id="fname">
                         </div>
                         <div>
                             <label for="lname">Last Name</label>
-                            <input type="text" id="lname">
+                            <input type="text" required id="lname">
                         </div>
                         <div>
                             <label for="dob">Date of Birth</label>
@@ -82,7 +82,7 @@
                         </div>
                         <div>
                             <label for="bus">Business Type</label>
-                            <select id="bus">
+                            <select required id="bus">
                                 <option value="sole">Sole Proprietorship</option>
                                 <option value="part">Partnership</option>
                                 <option value="lim">Limited Liability Company</option>
