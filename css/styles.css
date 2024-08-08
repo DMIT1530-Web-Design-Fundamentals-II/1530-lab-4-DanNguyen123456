@@ -167,4 +167,38 @@ button {
 }
 
 /* LARGEST VIEW */
-@media screen and (min-width: 1000px) {}
+@media screen and (min-width: 820px) {
+    main {
+        display: flex;
+    }
+
+    .banner {
+        background-image: url('/img/work-at-home.webp');
+        min-width: 40vh;
+        width: 100%;
+    }
+
+    .title {
+        font-size: .6rem;
+        padding-left: 1rem;
+        margin: 1rem 0rem 3rem 0rem;
+    }
+
+    .title img {
+        max-width: 1.4rem;
+        margin-right: .4rem;
+    }
+
+    .content {
+        margin: 2rem 2rem 2rem 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        line-height: 110%;
+    }
+
+    .head {
+        font-size: 1.5rem;
+    }
+}
